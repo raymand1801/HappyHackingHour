@@ -1,4 +1,4 @@
-//檢查版本
+#檢查版本
 import pandas as pd
 print("pandas version: %s" % pd.__version__)
 import matplotlib
@@ -14,12 +14,12 @@ numpy version: 1.17.4
 scikit-learn version: 0.21.3
 
 
-//查看googlecolab裡有哪些套件
+#查看googlecolab裡有哪些套件
 !pip list
 
 
 import numpy as np
-ar2=np.array([[0,3,5],[2,8,7]]) //創建一個2D array
+ar2=np.array([[0,3,5],[2,8,7]]) #創建一個2D array
 
 
 ar2
@@ -36,3 +36,33 @@ ar2.shape
 ar2.ndim
 -------
 2
+
+ar=np.array([2,4,6,8]); 
+ar.dtype
+--------
+dtype('int64')
+
+
+ar=np.array([2,-1,6,3], dtype='float' ); 
+ar.dtype
+--------
+dtype('float64')
+
+
+ar=np.array([2.,4,6,8]); 
+ar.dtype
+----------
+dtype('float64')
+
+
+f_ar = np.array([13,-3,8.88])
+f_ar
+---------
+array([13.  , -3.  ,  8.88])
+
+
+intf_ar=f_ar.astype(int)
+intf_ar
+----------
+array([13, -3,  8])
+
