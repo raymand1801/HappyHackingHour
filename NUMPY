@@ -1,0 +1,38 @@
+//檢查版本
+import pandas as pd
+print("pandas version: %s" % pd.__version__)
+import matplotlib
+print("matplotlib version: %s" % matplotlib.__version__)
+import numpy as np
+print("numpy version: %s" % np.__version__)
+import sklearn
+print("scikit-learn version: %s" % sklearn.__version__)
+--------
+pandas version: 0.25.3
+matplotlib version: 3.1.1
+numpy version: 1.17.4
+scikit-learn version: 0.21.3
+
+
+//查看googlecolab裡有哪些套件
+!pip list
+
+
+import numpy as np
+ar2=np.array([[0,3,5],[2,8,7]]) //創建一個2D array
+
+
+ar2
+-------
+array([[0, 3, 5],
+       [2, 8, 7]])
+
+
+ar2.shape
+--------
+(2, 3)
+
+
+ar2.ndim
+-------
+2
